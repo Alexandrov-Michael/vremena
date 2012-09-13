@@ -5,59 +5,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.cross-slide.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
     <script type="text/javascript">
-        jQuery(function($) {
-            $('#crossslide').crossSlide({
-                fade: 1
-            }, [
-                {
-                    src:  'images/1.jpg',
-                    href: '#',
-                    from: '50% 100% 2x',
-                    to:   '50% 0% 1x',
-                    time: 7
-                }, {
-                    src:  'images/2.jpg',
-                    href: '#',
-                    from: '50% 100% 2x',
-                    to:   '50% 0% 1x',
-                    time: 7
-                }, {
-                    src:  'images/3.jpg',
-                    href: '#',
-                    from: '100% 80% 1.9x',
-                    to:   '80% 0% 1x',
-                    time: 7
-                }, {
-                    src:  'images/4.jpg',
-                    href: '#',
-                    from: 'top left 0.5x',
-                    to:   'bottom right 1x',
-                    time: 7
-                }, {
-                    src:  'images/5.jpg',
-                    href: '#',
-                    from: '50% 100% 2x',
-                    to:   '50% 0% 1x',
-                    time: 7
-                }, {
-                    src:  'images/6.jpg',
-                    href: '#',
-                    from: '50% 100% 2x',
-                    to:   '50% 0% 1x',
-                    time: 7
-                }, {
-                    src:  'images/7.jpg',
-                    href: '#',
-                    from: 'top left 0.5x',
-                    to:   'bottom right 1x',
-                    time: 7
-                }
-            ]);
-        });
-        // -->
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
     </script>
 </head>
 <body>
@@ -92,8 +47,17 @@
         </div>
         <div class="row">
             <div class="span12">
-                <div id="crossslide">
-                </div>
+                <div class="slider-wrapper theme-default">
+					<div id="slider" class="nivoSlider">
+						<img src="images/1.jpg"  alt="" title="Сюда можно вставить описание" />
+						<img src="images/4.jpg" alt=""  />
+						<img src="images/2.jpg"  alt="" title="Сюда можно вставить описание" data-transition="slideInLeft" />
+						<img src="images/3.jpg"  alt=""  />
+					</div>
+					<div id="htmlcaption" class="nivo-html-caption">
+						<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+					</div>
+				</div>
             </div>
         </div>
         <div class="line"></div>

@@ -153,6 +153,11 @@ div#header ul.menu li:hover ul{
 
 
 /* slider */
+div#slider{
+	width:1000px;
+	height:300px;
+	margin:10px auto 0;
+}
 div.line{
     background: url('../img/maket/slider_line.png') no-repeat 50% 0;
     height: 2px;
